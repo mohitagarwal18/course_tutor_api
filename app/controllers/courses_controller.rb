@@ -1,10 +1,10 @@
 class CoursesController < ApplicationController
   def index
     page_number = params[:page].to_i
-    page_number = 1 if page_number.zero?
+    page_number = 1 unless page_number.positive?
     
     per_page = params[:page_size].to_i
-    per_page = 25 if per_page.zero?
+    per_page = 25 unless per_page.positive?
 
     offset = (page_number - 1) * per_page
 

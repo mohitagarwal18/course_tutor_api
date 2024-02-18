@@ -68,7 +68,7 @@ This Rails application provides APIs for managing courses and tutors.
 
 **List Courses with Tutors**
 
-- **Endpoint:** `GET /courses`
+- **Endpoint:** `GET /api/courses`
 - **Query Parameters:**
 ```
 page: Page number (default: 1)
@@ -105,7 +105,7 @@ page_size: Number of courses per page (default: 25)
 If no parameters are provided, defaults to page=1 and page_size=25.
 
 
-- **Endpoint:** `GET /courses/:id`
+- **Endpoint:** `GET /api/courses/:id`
 
 - **Response Body:**
 ```json

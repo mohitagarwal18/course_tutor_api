@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  resources :courses, only: [:index, :show]
-  post '/api/create', to: 'base#create'
+  scope :api do
+    resources :courses, only: [:index, :show]
+    post '/create', to: 'base#create'
+  end
 end
