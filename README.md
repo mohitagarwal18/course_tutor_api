@@ -4,7 +4,7 @@ This Rails application provides APIs for managing courses and tutors.
 
 ## Setup
 
- 1. Clone the repository: `git clone <repository_url>`
+ 1. Clone the repository: `git clone https://github.com/mohitagarwal18/course_tutor_api.git`
   2. Install dependencies: `bundle install`
   3. Set up the database: `rails db:create && rails db:migrate`
 
